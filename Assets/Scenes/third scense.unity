@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: 1154057536}
   - component: {fileID: 1154057535}
   - component: {fileID: 1154057534}
+  - component: {fileID: 1154057537}
   m_Layer: 5
   m_Name: Tillbaka
   m_TagString: Untagged
@@ -434,6 +435,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154057532}
   m_CullTransparentMesh: 1
+--- !u!114 &1154057537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154057532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: facf90402b0d3ef43b81efdc7cfbc39f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchButton: {fileID: 1154057534}
 --- !u!1 &1887097089
 GameObject:
   m_ObjectHideFlags: 0
