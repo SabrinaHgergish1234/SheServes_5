@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: SimulationEnvironmentAssetsManager
   m_EditorClassIdentifier: 
   m_EnvironmentPrefabPaths:
+  - Assets/added XR enviornment 2.prefab
   - Assets/added XR enviornment.prefab
+  - Assets/added XR enviornment_scene_3.prefab
   - Assets/UnityXRContent/ARFoundation/SimulationEnvironments/Backyard/Backyard_45ftx40ft.prefab
   - Assets/UnityXRContent/ARFoundation/SimulationEnvironments/Backyard/Backyard_55ftx40ft.prefab
   - Assets/UnityXRContent/ARFoundation/SimulationEnvironments/Bedroom/Bedroom_12ftx12ft.prefab
