@@ -18,10 +18,22 @@ public class ARSceneSwitcher : MonoBehaviour
 
             // Keep AR session and XR Origin between scenes
             if (arSession != null)
+            {
                 DontDestroyOnLoad(arSession.gameObject);
+            }
+            else
+            {
+                Debug.LogWarning("ARSession not found. Ensure it exists in the scene.");
+            }
 
             if (xrOrigin != null)
+            {
                 DontDestroyOnLoad(xrOrigin);
+            }
+            else
+            {
+                Debug.LogWarning("XR Origin not found. Ensure it exists in the scene.");
+            }
 
             isSessionPersisted = true;
         }
@@ -30,10 +42,29 @@ public class ARSceneSwitcher : MonoBehaviour
         {
             switchButton.onClick.AddListener(SwitchScene);
         }
+        else
+        {
+            Debug.LogWarning("Switch button is not assigned in the Inspector.");
+        }
     }
 
     void SwitchScene()
     {
-        SceneManager.LoadScene("SecondScene_2");
+        // Check if the current scene is FirstScene_2
+        if (SceneManager.GetActiveScene().name == "FirstScene_2")
+        {
+            // Load the SecondScene_2
+            SceneManager.LoadScene("SecondScene_2");
+            Debug.Log("Switching to SecondScene_2...");
+        }
+        else
+        {
+            // If the scene is already loaded or switching is unnecessary
+            Debug.LogWarning("Scene is already loaded or switching is unnecessary.");
+        }
     }
 }
+
+
+
+
